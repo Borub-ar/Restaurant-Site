@@ -6,24 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Page</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
-
     <nav class="menu page__menu">
-        <img src="#" alt="Company logo" class="menu__logo">
+        <div class="menu__content-container">
+            <a href="index.html">
+                <img  class="menu__logo" src="img/cutiepies-logo-red.png" alt="Company logo">
+            </a>
 
-        <ul class="menu__list">
-            <li class="menu__item">Order</li>
-            <li class="menu__item">Menu</li>
-            <li class="menu__item">Reservations</li>
-            <li class="menu__item">Drinks</li>
-            <li class="menu__item">Parties</li>
-            <li class="menu__item">Contact</li>
-        </ul>
-
-        <p class="menu_arrow-down">Arrow Down</p>
+            <ul class="menu__list">
+                <li><a href="#" class="menu__item">Order</a></li>
+                <li><a href="#" class="menu__item">Menu</a></li>
+                <li><a href="#" class="menu__item">Reservations</a></li>
+                <li><a href="#" class="menu__item">Drinks</a></li>
+                <li><a href="#" class="menu__item">Parties</a></li>
+                <li><a href="#" class="menu__item">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <header class="banner banner--big page__banner">
@@ -32,8 +33,10 @@
         <div class="banner__content">
             <h2 class="banner__title">YOU WANNA PIZZA ME?</h2>
             <p class="banner__subtitle">Order Now Online</p>
-            <button class="banner__btn">Order Now</button>
+            <button class="btn">Order Now</button>
         </div>
+
+        <p class="banner_arrow-down">Arrow Down</p>
     </header>
 
     <section class="slider">
@@ -46,7 +49,7 @@
         <div class="banner__content">
             <h2 class="banner__title">Hungry Yet?</h2>
             <p class="banner__subtitle">Check Our Our Menu</p>
-            <button class="banner__btn">View Menu</button>
+            <button class="btn">View Menu</button>
         </div>
     </section>
 
@@ -61,7 +64,7 @@
             <p class="banner__subtitle">Come on over and check us out!
                 Reserveration not needed, but we’ll
                 be happy to save you a seat.</p>
-            <button class="banner__btn">Reserve a Spot</button>
+            <button class="btn">Reserve a Spot</button>
         </div>
     </section>
 
@@ -85,7 +88,7 @@
                 PIZZA PARTY?</h2>
             <p class="banner__subtitle">Sit back, relax, and let us help you
                 throw the perfect private party!</p>
-            <button class="banner__btn">Book Now</button>
+            <button class="btn">Book Now</button>
         </div>
     </section>
 
@@ -94,8 +97,13 @@
 
         <div class="banner__content">
             <h2 class="banner__title">OUR STORY</h2>
-            <p class="banner__subtitle">Opened in 2019 in Uptown Dallas, CutiePies Pizza & Bar is the culmination of years of thought and research by a handful of pizza enthusiasts on a quest to create the perfect pie. We all agree that pizza is life, so we traveled all around and tasted every combination of dough, crust, toppings, and type of oven imaginable. We think we came up with something kinda special and have the perfect casual environment to showcase our creation. But hey, it’s just pizza (and other good stuff), so relax, kick back, have a slice of the good life, and let us show you our take on your favorite dish.</p>
-            <button class="banner__btn">Order Now</button>
+            <p class="banner__subtitle">Opened in 2019 in Uptown Dallas, CutiePies Pizza & Bar is the culmination of
+                years of thought and research by a handful of pizza enthusiasts on a quest to create the perfect pie. We
+                all agree that pizza is life, so we traveled all around and tasted every combination of dough, crust,
+                toppings, and type of oven imaginable. We think we came up with something kinda special and have the
+                perfect casual environment to showcase our creation. But hey, it’s just pizza (and other good stuff), so
+                relax, kick back, have a slice of the good life, and let us show you our take on your favorite dish.</p>
+            <button class="btn">Order Now</button>
         </div>
     </section>
 
@@ -112,7 +120,7 @@
         </div>
 
         <div class="footer__copyrights">
-            <p class="footer__copy">Copyright © 2021 CutiePies Pizza. All rights reserved.</p>
+            <p class="footer__copy">Copyright &copy; 2021 CutiePies Pizza. All rights reserved.</p>
         </div>
 
         <div class="footer__socials">
@@ -120,6 +128,7 @@
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
