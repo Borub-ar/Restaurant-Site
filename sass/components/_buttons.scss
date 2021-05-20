@@ -1,0 +1,15 @@
+.btn {
+    color: $primary-color;
+    background: transparent;
+    border: 2px solid $primary-color;
+    border-radius: 2rem;
+    font-family: Factoria-Medium;
+    padding: .5rem 3.5rem .7rem;
+    font-size: 1.2rem;
+    transition: background .3s;
+
+    &:hover {
+        border-color: $secondary-color;
+        background-color: $secondary-color;
+    }
+}

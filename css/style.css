@@ -1,3 +1,18 @@
+@keyframes arrow-pointing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+
 @font-face {
   font-family: Factoria-Bold;
   src: url("../fonts/Factoria-Bold.woff2");
@@ -13,6 +28,21 @@
   src: url("../fonts/Factoria-Medium.woff2");
 }
 
+@font-face {
+  font-family: Hanley-Rough;
+  src: url("../fonts/HanleyRough-Script.otf");
+}
+
+@font-face {
+  font-family: Trend-Rought-Five;
+  src: url("../fonts/TrendRoughSansFive.otf");
+}
+
+@font-face {
+  font-family: Trend-Rought-One;
+  src: url("../fonts/TrendRoughSansOne.otf");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,6 +50,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Factoria-Medium;
 }
 
 ul,
@@ -32,9 +63,68 @@ h4 {
   padding: 0;
 }
 
-.page {
+.banner {
+  min-height: 90vh;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner--big {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../img/deskop/cutiepies-pizza-1.jpg");
+}
+
+.banner--bg-second {
+  background-image: url(../img/deskop/cutiepies-pizza-2.jpg);
+}
+
+.banner__arrow-down {
+  font-size: 3rem;
+  color: #d9c7bd;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-text {
+  margin-top: 3.5rem;
+  width: 90%;
+  text-align: right;
+}
+
+.section-text--align-left {
+  text-align: left;
+}
+
+.section-text__main {
+  margin-left: auto;
+  width: 500px;
+  font-family: Trend-Rought-One;
+  font-weight: 200;
+  color: #d9c7bd;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.section-text__main--align-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.section-text__main--hanley-font {
+  font-family: Hanley-Rough;
+  font-weight: 200;
+}
+
+.section-text__subtitle {
+  font-family: Factoria-Medium;
+  color: #9f554c;
+  font-size: 1.9rem;
 }
 
 .menu {
@@ -44,7 +134,7 @@ h4 {
   z-index: 2;
   width: 100vw;
   background: #1c1c1e;
-  padding: .6rem 0;
+  padding: .5rem 0;
 }
 
 .menu__content-container {
@@ -75,5 +165,21 @@ h4 {
 
 .menu__item:hover {
   color: white;
+}
+
+.btn {
+  color: #9f554c;
+  background: transparent;
+  border: 2px solid #9f554c;
+  border-radius: 2rem;
+  font-family: Factoria-Medium;
+  padding: .5rem 3.5rem .7rem;
+  font-size: 1.2rem;
+  transition: background .3s;
+}
+
+.btn:hover {
+  border-color: #d9c7bd;
+  background-color: #d9c7bd;
 }
 /*# sourceMappingURL=style.css.map */
