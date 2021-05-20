@@ -1,4 +1,64 @@
-.page {
-    display: flex;
-    flex-direction: column;
+.banner {
+    min-height: 90vh;
+    background-size: cover;
+    @include flex-center;
+
+
+    &--big {
+        position: relative;
+        min-height: 100vh;
+        background-image: url('../img/deskop/cutiepies-pizza-1.jpg');
+    }
+
+    &--bg-second {
+        background-image: url(../img/deskop/cutiepies-pizza-2.jpg);
+    
+    }
+
+    &__arrow-down {
+        font-size: 3rem;
+        color: $secondary-color;
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        // animation: arrow-pointing 2s ease-in-out infinite;
+    }
+}
+
+.section-text {
+    margin-top: 3.5rem;
+    width: 90%;
+    text-align: right;
+
+    &--align-left {
+        text-align: left;
+    }
+
+    &__main {
+        margin-left: auto;
+        width: 500px;
+        font-family: Trend-Rought-One;
+        font-weight: 200;
+        color: $secondary-color;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        line-height: 1.2;
+
+        &--align-left {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        &--hanley-font {
+            font-family: Hanley-Rough;
+            font-weight: 200;
+        }
+    }
+
+    &__subtitle {
+        font-family: Factoria-Medium;
+        color: $primary-color;
+        font-size: 1.9rem;
+    }
 }
