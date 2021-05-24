@@ -1,3 +1,5 @@
+'use strict';
+
 window.addEventListener('scroll', () => {
     const navBar = document.querySelector('.menu');
     const navBarLogo = document.querySelector('.menu__logo');

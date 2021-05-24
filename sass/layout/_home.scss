@@ -1,18 +1,21 @@
 .banner {
-    min-height: 90vh;
-    background-size: cover;
+    min-height: 100vh;
+    position: relative;
     @include flex-center;
-
-
-    &--big {
-        position: relative;
-        min-height: 100vh;
-        background-image: url('../img/deskop/cutiepies-pizza-1.jpg');
-    }
+    background-image: url('../img/deskop/cutiepies-pizza-1.jpg');
+    background-size: cover;
 
     &--bg-second {
         background-image: url(../img/deskop/cutiepies-pizza-2.jpg);
-    
+    }
+
+    &--bg-third {
+        background-image: url(../img/deskop/cutiepies-drinks.jpg);
+        background-position-y: 50%;
+    }
+
+    &--sm {
+        min-height: 90vh;
     }
 
     &__arrow-down {
@@ -27,23 +30,23 @@
 }
 
 .section-text {
-    margin-top: 3.5rem;
     width: 90%;
     text-align: right;
+    margin-right: auto;
 
     &--align-left {
         text-align: left;
+        margin-left: auto;
     }
 
     &__main {
         margin-left: auto;
-        width: 500px;
+        max-width: 500px;
         font-family: Trend-Rought-One;
         font-weight: 200;
         color: $secondary-color;
-        font-size: 3rem;
+        font-size: 3.1rem;
         letter-spacing: 1px;
-        line-height: 1.2;
 
         &--align-left {
             margin-left: 0;
@@ -54,11 +57,115 @@
             font-family: Hanley-Rough;
             font-weight: 200;
         }
+
+        &--narrow {
+            max-width: 300px;
+        }
+
     }
 
     &__subtitle {
         font-family: Factoria-Medium;
         color: $primary-color;
         font-size: 1.9rem;
+        margin: 1.5rem 0;
+
+        &--sm-light {
+            font-size: 1.2rem;
+            color: $secondary-color;
+            font-weight: 200;
+        }
+
+        &--sm-dark-green {
+            font-size: 1.3rem;
+            color: $dark-green;
+        }
+
+        &--xs-light {
+            font-size: 1.1rem;
+            color: $secondary-color;
+        }
+    }
+}
+
+.section-small {
+    display: flex;
+    height: 75vh;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__img {
+        flex: 6;
+        height: auto;
+    }
+
+    &__text {
+        flex: 4.5;
+        display: flex;
+        align-items: center;
+        background-color: $dark-green;
+        padding: 0 10vw 0 5vw;
+
+        &--bg-red {
+            background-color: $primary-color;
+        }
+    }
+}
+
+.cheese-photo {
+    height: 35vh;
+    background: url(../img/deskop/cheese-background.jpg);
+    background-size: 200%;
+    background-position: 50% 30%;
+}
+
+.happy-hours {
+    min-height: 35vh;
+    @include flex-center;
+    background-color: #232325;
+
+    &__inner {
+        width: 70%;
+        border: 1px solid $dark-green;
+        display: flex;
+        padding: 1.6rem;
+    }
+
+    &__left {
+        @include flex-center;
+        width: 50%;
+        margin: 1rem 0;
+    }
+
+    &__title {
+        color: $dark-green;
+        font-size: 3rem;
+        font-family: Hanley-Rough;
+        font-weight: 200;
+    }
+
+    &__right {
+        width: 50%;
+        padding-left: 5vw;
+        line-height: 1;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        border-left: 2px solid $primary-color;
+    }
+
+    &__par1 {
+        color: $primary-color;
+        font-family: Factoria-Bold;
+        font-size: 1.5rem;
+    }
+
+    &__par2 {
+        color: $secondary-color;
+        margin: .5rem 0;
     }
 }
