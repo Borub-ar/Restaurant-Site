@@ -12,3 +12,4 @@ window.addEventListener('scroll', () => {
         navBarLogo.style.maxHeight = '4.6rem';
     }
 })
+
