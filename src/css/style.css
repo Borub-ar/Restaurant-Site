@@ -28,8 +28,11 @@
   src: url("../fonts/TrendRoughSansOne.otf");
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,14 +57,17 @@ h4 {
   0% {
     transform: translateY(0);
   }
-  50% {
-    transform: translateY(1);
+  15% {
+    transform: translateY(60%);
   }
-  75% {
+  30% {
     transform: translateY(0);
   }
-  100% {
-    transform: translateY(1);
+  45% {
+    transform: translateY(60%);
+  }
+  60%, 100% {
+    transform: translateY(0);
   }
 }
 
@@ -95,6 +101,7 @@ h4 {
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
+  animation: arrow-pointing 3s ease-in-out infinite;
 }
 
 .section-text {
@@ -233,12 +240,46 @@ h4 {
 .happy-hours__par1 {
   color: #9f554c;
   font-family: Factoria-Bold;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: .7rem;
 }
 
 .happy-hours__par2 {
   color: #d9c7bd;
-  margin: .5rem 0;
+  margin-top: .4rem;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 80vh;
+  background-color: #232325;
+  display: flex;
+}
+
+.slider__photo {
+  position: absolute;
+  height: 100%;
+  width: 33.5%;
+  transition: left 1s ease, right 1s ease;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  font-size: 2.1rem;
+  color: #ffffff;
+  padding: .6rem 1.2rem;
+  border: none;
+  background-color: #9f564caf;
+  cursor: pointer;
+}
+
+.slider__btn--right {
+  right: 0;
 }
 
 .menu {
@@ -344,10 +385,14 @@ h4 {
 
 .footer__open-hours {
   flex: 1;
-  padding: .3rem 0 .3rem 4rem;
+  padding: .3rem 0 .3rem 6rem;
 }
 
-.footer__inner-two {
+.footer__open:nth-child(2) {
+  margin: .9rem 0;
+}
+
+.footer__inner-second {
   width: 80%;
   display: flex;
   align-items: center;

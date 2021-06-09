@@ -8,7 +8,9 @@
     <title>Restaurant Page</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://kit.fontawesome.com/5789656d95.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5789656d95.js" crossorigin="anonymous" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/carousel.js" defer></script>
 </head>
 
 <body>
@@ -36,12 +38,22 @@
             <a href="#"><button class="btn">Order Now</button></a>
         </div>
 
-        <a href="#" class="banner__arrow-down"><i class="fas fa-chevron-down"></i></a>
+        <a href="#section1" class="banner__arrow-down"><i class="fas fa-chevron-down"></i></a>
     </header>
 
 
-    <!-- <section class="slider">
-    </section> -->
+    <section class="slider" id="section1">
+        <button class="slider__btn"><i class="fas fa-chevron-left"></i></button>
+        <img src="img/slider-items/ph1.jpg" alt="" class="slider__photo">
+        <img src="img/slider-items/ph2.jpg" alt="" class="slider__photo">
+        <img src="img/slider-items/ph3.jpg" alt="" class="slider__photo">
+        <img src="img/slider-items/ph4.jpg" alt="" class="slider__photo">
+        <img src="img/slider-items/ph5.jpg" alt="" class="slider__photo">
+        <img src="img/slider-items/ph6.jpg" alt="" class="slider__photo">
+        <img src="img/slider-items/ph7.jpg" alt="" class="slider__photo">
+        <img src="img/slider-items/ph8.jpg" alt="" class="slider__photo">
+        <button class="slider__btn slider__btn--right"><i class="fas fa-chevron-right"></i></button>
+    </section>
 
 
 
@@ -56,7 +68,8 @@
 
 
     <section class="section-small">
-        <img class="section-small__img" src="https://www.cutiepiespizza.com/wp-content/uploads/2020/02/cutie-pies-pizza-bar.jpg" alt="">
+        <img class="section-small__img"
+            src="https://www.cutiepiespizza.com/wp-content/uploads/2020/02/cutie-pies-pizza-bar.jpg" alt="">
 
         <div class="section-small__text">
             <div class="section-text section-text--align-left section-text--narrow">
@@ -98,7 +111,8 @@
     </section>
 
     <section class="section-small section-small--reverse">
-        <img class="section-small__img" src="https://www.cutiepiespizza.com/wp-content/uploads/2020/02/pizza-party-dallas.jpg" alt="">
+        <img class="section-small__img"
+            src="https://www.cutiepiespizza.com/wp-content/uploads/2020/02/pizza-party-dallas.jpg" alt="">
 
         <div class="section-small__text section-small__text--bg-red">
             <div class="section-text section-text--narrow">
@@ -112,7 +126,8 @@
     </section>
 
     <section class="section-small">
-        <img class="section-small__img" src="https://www.cutiepiespizza.com/wp-content/uploads/2020/02/uptown-dallas-pizza.jpg" alt="">
+        <img class="section-small__img"
+            src="https://www.cutiepiespizza.com/wp-content/uploads/2020/02/uptown-dallas-pizza.jpg" alt="">
 
         <div class="section-small__text">
             <div class="section-text section-text--align-left">
@@ -129,26 +144,21 @@
         </div>
     </section>
 
-
-
-
-
-
-
     <footer class="footer">
         <div class="footer__inner">
             <div class="footer__contact">
                 <p class="footer__adress">2916 McKinney Ave, Dallas, TX s75204</p>
                 <p class="footer__tel">(214) 238-6348</p>
             </div>
+
             <div class="footer__open-hours">
-                <p>We’re Open:</p>
-                <p>Mon-Sat 4pm – 2am</p>
-                <p>Sunday 11am – 2am</p>
+                <p class="footer__open">We’re Open:</p>
+                <p class="footer__open">Mon-Sat 4pm – 2am</p>
+                <p class="footer__open">Sunday 11am – 2am</p>
             </div>
         </div>
 
-        <div class="footer__inner-two">
+        <div class="footer__inner-second">
             <div class="footer__copyrights">
                 <p class="footer__copy">Copyright &copy; 2021 CutiePies Pizza. All rights reserved.</p>
             </div>
@@ -158,9 +168,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/carousel.js"></script>
 </body>
 
 </html>
