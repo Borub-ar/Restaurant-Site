@@ -286,7 +286,7 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   width: 100vw;
   background: #1c1c1e;
   padding: .5rem 0;

@@ -5,7 +5,7 @@ const slider = document.querySelector('.slider');
 
 
 sliderPhotos.forEach((photo, i) => {
-    photo.style.left = `${i * 33.5}%`;
+    photo.style.transform = `translateX(${i * 100}%)`
 })
 
 
@@ -23,7 +23,7 @@ const cloneSliderPhoto = photosArray => {
 }
 
 setInterval(() => {
-    const sliderPhotos = document.querySelectorAll('.slider__photo');
+    const sliderPhotos = document.querySelectorAll('.slide');
 
     sliderPhotos.forEach(photo => {
         const currentPosition = Number.parseInt(window.getComputedStyle(photo).left);
@@ -33,11 +33,5 @@ setInterval(() => {
     })
 
     cloneSliderPhoto(sliderPhotos);
-
 }, 4000)
 
-
-
-slider.addEventListener('click', e => {
-
-})

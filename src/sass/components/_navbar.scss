@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     width: 100vw;
     background: $bg-primary;
     padding: .5rem 0;
@@ -16,7 +16,6 @@
     }
 
     &__logo {
-
         transition: max-height .3s ease-in-out;
     }
 
